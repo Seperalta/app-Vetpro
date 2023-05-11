@@ -1,0 +1,38 @@
+<div class="container">
+    <h2>Registrar Historia Clínica</h2>
+    <form (ngSubmit)="submitForm()">
+      <div class="form-group">
+        <label for="nombreMascota">Nombre Mascota</label>
+        <input type="text" id="nombreMascota" name="nombreMascota" [(ngModel)]="historia.nombreMascota" required>
+      </div>
+      <div class="form-group">
+        <label for="nombrePropietario">Nombre Propietario</label>
+        <input type="text" id="nombrePropietario" name="nombrePropietario" [(ngModel)]="historia.nombrePropietario" required>
+      </div>
+      <div class="form-group">
+        <label for="documentoIdentidad">Documento de Identidad</label>
+        <input type="text" id="documentoIdentidad" name="documentoIdentidad" [(ngModel)]="historia.documentoIdentidad" required>
+      </div>
+      <div class="form-group">
+        <label for="medicoTratante">Médico Tratante</label>
+        <input type="text" id="medicoTratante" name="medicoTratante" [(ngModel)]="historia.medicoTratante" required>
+      </div>
+      <div class="form-group">
+        <label for="observaciones">Observaciones</label>
+        <textarea id="observaciones" name="observaciones" [(ngModel)]="historia.observaciones" required></textarea>
+      </div>
+      <div class="form-group">
+        <label for="tratamiento">Tratamiento</label>
+        <textarea id="tratamiento" name="tratamiento" [(ngModel)]="historia.tratamiento" required></textarea>
+      </div>
+      <div class="form-group">
+        <label for="fechaCita">Fecha de Cita</label>
+        <input type="date" id="fechaCita" name="fechaCita" [(ngModel)]="historia.fechaCita" required>
+      </div>
+      <div class="form-actions">
+        <button type="submit">Enviar</button>
+        <button type="button" (click)="resetForm()">Limpiar</button>
+      </div>
+    </form>
+  </div>
+  
