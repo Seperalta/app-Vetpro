@@ -6,7 +6,8 @@
     justify-content: center;
     width: 100%;
     height: 100vh;
-    background-color: #f0f5ff;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
   }
   
   .pass-forg-content {
@@ -22,14 +23,15 @@
   }
   
   .pass-forg-title {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 20px;
-    color: #1f2d3d;
+    text-align: center;
+    background: rgb(2,0,36);
+    background: linear-gradient(218deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    color: #ffffff;
+    width: 300px
   }
   
   .pass-forg-input {
-    width: 100%;
+    width: 93%;
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #c2e2ff;
@@ -79,7 +81,7 @@
   /* Estilos para PC */
   @media screen and (min-width: 769px) {
     .pass-forg-content {
-      width: 60%;
+      width: 35%;
     }
   }
   

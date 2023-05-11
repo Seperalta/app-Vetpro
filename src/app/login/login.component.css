@@ -1,73 +1,73 @@
 .login-container {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     height: 100vh;
-    background-color: #f0f5ff;
-    text-align: center;
   }
   
   .login-box {
-    width: 300px;
+    background-color: #e1efff;
+    border-radius: 10px;
     padding: 20px;
-    background-color: #ffffff;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
   }
   
-  .login-box h2 {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 20px;
-    color: #1f2d3d;
+  h2 {
+    text-align: center;
+    color: #333333;
   }
   
   .form-group {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
   
   label {
-    font-size: 16px;
-    color: #34495e;
+    display: block;
+    margin-bottom: 5px;
+    color: #333333;
+  }
+  .vetpro_icon{
+    text-align: center;
+    background: rgb(2,0,36);
+background: linear-gradient(218deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    border-radius: 10px;
+    color: #ffffff;
+    
   }
   
-  input.form-control {
-    width: 100%;
+  input[type="email"],
+  input[type="password"] {
+    width: 94%;
     padding: 10px;
-    border: 1px solid #c2e2ff;
-    border-radius: 3px;
-    font-size: 14px;
-    color: #34495e;
+    border-radius: 5px;
+    border: 1px solid #cccccc;
   }
   
   button.btn-primary {
+    display: block;
     width: 100%;
-    padding: 10px 20px;
-    background-color: #2980b9;
-    border: none;
-    border-radius: 3px;
-    font-size: 14px;
+    padding: 10px;
+    background-color: #007bff;
     color: #ffffff;
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s;
   }
   
   button.btn-primary:hover {
-    background-color: #2471a3;
+    background-color: #0056b3;
   }
   
   a {
-    font-size: 14px;
-    color: #2980b9;
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    color: #333333;
     text-decoration: none;
-  }
-  
-  a:hover {
-    text-decoration: underline;
-  }
-  
-  @media (max-width: 768px) {
-    .login-box {
-      width: 100%;
-    }
   }
   

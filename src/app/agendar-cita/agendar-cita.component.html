@@ -1,0 +1,44 @@
+<div class="container">
+    <h2>Agendar Cita</h2>
+    <form (ngSubmit)="submitForm()" class="two-column-form">
+      <div class="form-group">
+        <label for="fecha">Fecha</label>
+        <input type="date" id="fecha" name="fecha" [(ngModel)]="cita.fecha" required>
+      </div>
+      <div class="form-group">
+        <label for="nombrePropietario">Nombre del Propietario</label>
+        <input type="text" id="nombrePropietario" name="nombrePropietario" [(ngModel)]="cita.nombrePropietario" required>
+      </div>
+      <div class="form-group">
+        <label for="identificacionPropietario">Identificación del Propietario</label>
+        <input type="text" id="identificacionPropietario" name="identificacionPropietario" [(ngModel)]="cita.identificacionPropietario" required>
+      </div>
+      <div class="form-group">
+        <label for="correoPropietario">Correo Electrónico del Propietario</label>
+        <input type="email" id="correoPropietario" name="correoPropietario" [(ngModel)]="cita.correoPropietario" required>
+      </div>
+      <div class="form-group">
+        <label for="nombreMascota">Nombre de la Mascota</label>
+        <input type="text" id="nombreMascota" name="nombreMascota" [(ngModel)]="cita.nombreMascota" required>
+      </div>
+      <div class="form-group">
+        <label for="nombreVeterinaria">Nombre de la Veterinaria</label>
+        <input type="text" id="nombreVeterinaria" name="nombreVeterinaria" [(ngModel)]="cita.nombreVeterinaria" required>
+      </div>
+      <div class="form-group">
+        <label for="tipoConsulta">Tipo de Consulta</label>
+        <select id="tipoConsulta" name="tipoConsulta" [(ngModel)]="cita.tipoConsulta" required>
+          <option value="">Seleccione una opción</option>
+          <option value="Consulta General">Consulta General</option>
+          <option value="Vacunación">Vacunación</option>
+          <option value="Control de Peso">Control de Peso</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="nombreDoctor">Nombre del Doctor</label>
+        <input type="text" id="nombreDoctor" name="nombreDoctor" [(ngModel)]="cita.nombreDoctor" required>
+      </div>
+      <button type="submit">Agendar Cita</button>
+    </form>
+  </div>
+  

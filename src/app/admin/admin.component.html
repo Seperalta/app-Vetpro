@@ -1,0 +1,38 @@
+<div class="admin-container">
+    <header>
+      <div class="user-info">
+        <span>Bienvenido, {{ username }}</span>
+        <button (click)="logout()">Salir</button>
+      </div>
+    </header>
+  
+    <div class="content-container">
+      <aside>
+        <app-menu (optionSelected)="handleOptionSelected($event)"></app-menu>
+      </aside>
+  
+      <main>
+        <h2>Vetpro</h2>
+        <!-- Contenido dinámico aquí -->
+        <div *ngIf="showAgendarCita">
+          <app-agendar-cita></app-agendar-cita>
+        </div>
+        <div *ngIf="showRegistroMascota">
+          <app-registro-mascota></app-registro-mascota>
+        </div>
+        <div *ngIf="showRegistroPropietario">
+          <app-registro-propietario></app-registro-propietario>
+        </div>
+        <div *ngIf="showConsultaHM">
+          <app-consulta-historia-medica></app-consulta-historia-medica>
+        </div>
+        <div *ngIf="showRegistroHM">
+          <app-registro-historia-medica></app-registro-historia-medica>
+        </div>
+        <div *ngIf="showCrearUsuario">
+          <app-crear-usuario></app-crear-usuario>
+        </div>
+      </main>
+    </div>
+  </div>
+  

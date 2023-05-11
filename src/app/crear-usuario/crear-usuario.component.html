@@ -1,0 +1,28 @@
+<div class="container">
+    <h2>Crear Usuario</h2>
+    <form (ngSubmit)="submitForm()">
+      <div class="form-group">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" [(ngModel)]="usuario.nombre" required>
+      </div>
+      <div class="form-group">
+        <label for="identificacion">Identificación</label>
+        <input type="text" id="identificacion" name="identificacion" [(ngModel)]="usuario.identificacion" required>
+      </div>
+      <div class="form-group">
+        <label for="correo">Correo Electrónico</label>
+        <input type="email" id="correo" name="correo" [(ngModel)]="usuario.correo" required>
+      </div>
+      <div class="form-group">
+        <label for="perfil">Perfil</label>
+        <select id="perfil" name="perfil" [(ngModel)]="usuario.perfil" required>
+          <option value="">Seleccione un perfil</option>
+          <option value="propietario">Propietario</option>
+          <option value="asistente">Asistente Médico</option>
+          <option value="veterinario">Médico Veterinario</option>
+        </select>
+      </div>
+      <button type="submit">Crear Usuario</button>
+    </form>
+  </div>
+  

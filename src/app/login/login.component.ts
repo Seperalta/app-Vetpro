@@ -19,6 +19,7 @@ export class LoginComponent {
 
   login() {
     // Lógica para iniciar sesión
+    this.router.navigate(['/admin'])
   }
 
 }

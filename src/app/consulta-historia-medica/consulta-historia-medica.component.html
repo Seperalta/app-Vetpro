@@ -1,0 +1,36 @@
+<div class="container">
+    <h2>Consulta Historia Clínica</h2>
+    <div class="search-bar">
+      <input type="text" placeholder="Buscar" [(ngModel)]="searchQuery">
+      <button (click)="buscar()">Buscar por identificación</button>
+    </div>
+    <div class="tabla-responsive">
+      <table class="tabla-historias">
+        <thead>
+          <tr>
+            <th>Identificador</th>
+            <th>Nombre Mascota</th>
+            <th>Nombre Propietario</th>
+            <th>Documento de Identidad</th>
+            <th>Médico Tratante</th>
+            <th>Observaciones</th>
+            <th>Tratamiento</th>
+            <th>Fecha de Cita</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let historia of historias">
+            <td>{{ historia.identificador }}</td>
+            <td>{{ historia.nombreMascota }}</td>
+            <td>{{ historia.nombrePropietario }}</td>
+            <td>{{ historia.identificacionPropietario }}</td>
+            <td>{{ historia.medicoTratante }}</td>
+            <td>{{ historia.observaciones }}</td>
+            <td>{{ historia.tratamiento }}</td>
+            <td>{{ historia.fechaCita }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  

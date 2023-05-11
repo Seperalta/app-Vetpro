@@ -1,0 +1,6 @@
+<ul class="menu-list">
+    <li *ngFor="let option of menuOptions" [class.active]="option === selectedOption" (click)="selectOption(option)">
+        {{ option }}
+    </li>
+  </ul>
+  

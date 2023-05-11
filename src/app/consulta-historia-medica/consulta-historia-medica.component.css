@@ -1,0 +1,61 @@
+.container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  h2 {
+    text-align: center;
+  }
+  
+  .search-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .search-bar input {
+    padding: 8px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+  }
+  
+  .search-bar button {
+    padding: 8px 12px;
+    background-color: #2186c4;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .tabla-historias {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .tabla-historias th,
+  .tabla-historias td {
+    padding: 8px;
+    text-align: left;
+    background-color: #f2f2f2;
+  }
+  
+  .tabla-historias th {
+    color: #2186c4;
+  }
+  
+  .tabla-historias tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  @media screen and (max-width: 480px) {
+    .tabla-historias {
+      overflow-x: auto;
+    }
+  }
+  
