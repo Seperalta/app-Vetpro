@@ -1,3 +1,5 @@
+// login.component.ts
+import { Router } from '@angular/router';
 import { Component } from '@angular/core';
 
 @Component({
@@ -6,5 +8,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
+  constructor(private router: Router) {}
+  email!: string;
+  password!: string;
+  showPassForgComponent: boolean = false;
+
+  forgotPassword() {
+    this.router.navigate(['/pass-forg']);
+  }
+
+  login() {
+    // Lógica para iniciar sesión
+  }
 
 }
